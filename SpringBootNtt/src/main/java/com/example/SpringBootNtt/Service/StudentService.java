@@ -15,7 +15,7 @@ public class StudentService {
     }
     public Student getStudent(String studentName){
         for (Student s:students){
-            if (studentName.equals(s.getName())){
+            if (studentName.equalsIgnoreCase(s.getName())){
                 return s;
             }
         }

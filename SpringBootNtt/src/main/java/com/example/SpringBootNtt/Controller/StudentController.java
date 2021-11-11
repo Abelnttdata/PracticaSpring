@@ -21,8 +21,8 @@ public class StudentController {
         service.addStudent(student);
     }
 
-    @GetMapping("/{byname}/{myname}")
-    public Student getStudentByName(@PathVariable("nameVariable") String name){
+    @GetMapping("/byname/{myname}")
+    public Student getStudentByName(@PathVariable("myname") String name){
         return service.getStudent(name);
     }
 
